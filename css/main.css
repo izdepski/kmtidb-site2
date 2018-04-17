@@ -1,0 +1,531 @@
+@font-face {
+  font-family: 'Avenir-Book';
+  src: url('fonts/Avenir-Book.eot') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Avenir-Book';
+  src:  url('fonts/Avenir-Book.woff') format('woff'), url('fonts/Avenir-Book.ttf')  format('truetype'), url('fonts/Avenir-Book.svg#Avenir-Book') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'AvenirNextCondensed-Bold';
+  src: url('AvenirNextCondensed-Bold.eot') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'AvenirNextCondensed-Bold';
+  src:  url('fonts/AvenirNextCondensed-Bold.eot') format('woff'), url('fonts/AvenirNextCondensed-Bold.ttf')  format('truetype'), url('fonts/AvenirNextCondensed-Bold.svg#AvenirNextCondensed-Bold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'AvenirNext-Bold';
+  src: url('fonts/AvenirNext-Bold.eot') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'AvenirNext-Bold';
+  src:  url('fonts/AvenirNext-Bold.woff') format('woff'), url('fonts/AvenirNext-Bold.ttf')  format('truetype'), url('fonts/AvenirNext-Bold.svg#AvenirNext-Bold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'AvenirLTPro-HeavyOblique';
+  src: url('fonts/AvenirLTPro-HeavyOblique.eot') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'AvenirLTPro-HeavyOblique';
+  src:  url('fonts/AvenirLTPro-HeavyOblique.woff') format('woff'), url('fonts/AvenirLTPro-HeavyOblique.ttf')  format('truetype'), url('fonts/AvenirLTPro-HeavyOblique.svg#AvenirLTPro-HeavyOblique') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+body{font-family: 'Open Sans', sans-serif;}
+
+a{text-decoration: none;}
+a:hover{text-decoration: none;}
+
+.home .logo{position: absolute; top: 33px; left: 50px; z-index: 10}
+.home .kmti-logo{position: absolute; top: 70px; right: 55px; z-index: 10}
+.home .navi{position: absolute; left: 50px; top: 300px; z-index: 10; text-align: left; font-family: 'Avenir-Book'; letter-spacing: 3px;} 
+.home .navi:after{background: #FFFFFF; width: 38px; height: 2px; content: ''; position: absolute; bottom: -20px; left: 0;}
+.home .navi ul {margin: 0; padding: 0; list-style: none;}
+.home .navi ul li{font-size: 12px; text-transform: uppercase; line-height: 20px;}
+.home .navi ul li a{color: #FFFFFF;}
+.home .footer{position: absolute; bottom: 0; right: 0; left:0; z-index: 10; font-size: 10px; color: #FFFFFF; width: 95%; text-align: right; letter-spacing: 0; margin: 0 auto;}
+.home .footer .copy{border-top: 1px solid #FFFFFF; line-height: 33px;}
+.home .footer span{margin: 0 8px;}
+
+#slide1,#slide2,#slide3,#slide4,#slide5,#slide6,#slide7,#slide8{background-size: cover;}
+#slide1{background-image: url(../imgs/slide1.jpg); }
+#slide2{background-image: url(../imgs/slide2.jpg); }
+#slide3{background-image: url(../imgs/slide3.jpg); }
+#slide4{background-image: url(../imgs/slide4.jpg); }
+#slide5{background-image: url(../imgs/slide5.jpg); }
+#slide6{background-image: url(../imgs/slide6.jpg); }
+#slide7{background-image: url(../imgs/slide7.jpg); }
+#slide8{background-image: url(../imgs/slide8.jpg); }
+
+.up-arrow{position: absolute; bottom: 180px; left: 48px; z-index: 100}
+.down-arrow{position: absolute; bottom: 100px; left: 48px; z-index: 100}
+
+.intro{margin: 0 auto; width: 70%; text-align: left; display: table;}
+
+/* Work */
+.work .logo{position: absolute; top: 33px; left: 58px; z-index: 10; width: 54px;}
+.work .logo img{width: 100%;}
+.work .kmti-logo{position: absolute; top: 70px; right: 55px; z-index: 10}
+.work .navi{position: absolute; left: 58px; top: 124px; z-index: 10; text-align: left; font-family: 'Avenir-Book'; letter-spacing: 3px;}
+.work .navi:after{background: #333333; width: 38px; height: 2px; content: ''; position: absolute; bottom: -40px; left: 0;}
+.work .navi ul {margin: 0; padding: 0; list-style: none;}
+.work .navi ul li{font-size: 11px; text-transform: uppercase; line-height: 16px;}
+.work .navi ul li a{color: #333333;}
+.work .footer{position: absolute; bottom: 0; right: 0; left:0; z-index: 10; font-size: 10px; color: #333333; width: 95%; text-align: right; letter-spacing: 0; margin: 0 auto;}
+.work .footer .copy{border-top: 1px solid #000000; line-height: 33px;}
+.work .footer .social-media{padding: 10px;}
+.work .footer .social-media a{margin-left: 10px;}
+.work .footer span{margin: 0 8px;}
+
+.work .content img{width: 100%;}
+/*.work .content ul{margin: 0; padding: 0; list-style: none;}
+.work .content ul li{float: left; width: 25%; text-align: center; display: table; height: 159px;}
+.work .content ul li span{display: table-cell; vertical-align: middle;}*/
+
+/* About */
+.about{color: #000000; letter-spacing: 5px;}
+.about .logo{position: absolute; top: 33px; left: 58px; z-index: 10; width: 54px;}
+.about .logo img{width: 100%;}
+.about .kmti-logo{position: absolute; top: 70px; right: 55px; z-index: 10}
+.about .navi{position: absolute; left: 58px; top: 124px; z-index: 10; text-align: left;  font-family: 'Avenir-Book'; letter-spacing: 3px;}
+.about .navi:after{background: #333333; width: 38px; height: 2px; content: ''; position: absolute; bottom: -40px; left: 0;}
+.about .navi ul {margin: 0; padding: 0; list-style: none;}
+.about .navi ul li{font-size: 11px; text-transform: uppercase; line-height: 16px;}
+.about .navi ul li a{color: #333333;}
+.about .footer{position: absolute; bottom: 0; right: 0; left: 0;  z-index: 10; font-size: 10px; color: #333333; width: 95%; text-align: right; letter-spacing: 0; margin: 0 auto;}
+.about .footer .copy{border-top: 1px solid #000000; line-height: 33px;}
+.about .footer .social-media{padding: 10px;}
+.about .footer .social-media a{margin-left: 10px;}
+.about .footer span{margin: 0 8px;}
+
+.about .content{width: 700px; letter-spacing: 2px; display: inline-block; margin-top: 0;}
+.about .content h1{font-size: 56px; font-weight: bold; font-style: italic; text-transform: uppercase; color: #000000; margin: 0 0 40px; font-family: 'AvenirLTPro-HeavyOblique'; font-weight: bolder; line-height: 52px; letter-spacing: 8px;}
+.about .content h1 span{display: inline-block; border-bottom: 3px solid #000000; padding-top: 5px;}
+.about .content h3{font-size:16px; margin: 0 0 30px; text-align: right; letter-spacing: 5px; /*font-family: 'Avenir-Book';*/ padding-right: 20px; position: relative; font-weight: bold; font-style: italic}
+.about .content h3:after{background: #000000; width: 103px; height: 2px; right: -640px; content:''; position: absolute; bottom: -10px; }
+.about .content h4{font-family: 'Avenir-Book'; font-weight: normal;}
+.about .content ul{margin: 0; padding: 0; list-style: none;}
+.about .content ul li{float: left; width: 50%; font-family: 'Avenir-Book';}
+
+/* Contact */
+.contact{color: #000000; letter-spacing: 5px;}
+.contact .logo{position: absolute; top: 33px; left: 58px; z-index: 10}
+.contact .kmti-logo{position: absolute; top: 70px; right: 55px; z-index: 10}
+.contact .navi{position: absolute; left: 58px; top: 190px; z-index: 10; text-align: left; font-family: 'Avenir-Book'; letter-spacing: 3px;}
+.contact .navi:after{background: #FFFFFF; width: 38px; height: 2px; content: ''; position: absolute; bottom: -40px; left: 0;}
+.contact .navi ul {margin: 0; padding: 0; list-style: none;}
+.contact .navi ul li{font-size: 11px; text-transform: uppercase; line-height: 16px;}
+.contact .navi ul li a{color: #FFFFFF;}
+.contact .footer{position: absolute; bottom: 0; right: 0; left: 0; z-index: 10; font-size: 10px; color: #FFFFFF; width: 95%; text-align: right; letter-spacing: 0; margin: 0 auto;}
+.contact .footer a{color: #FFFFFF;}
+.contact .footer .copy{border-top: 1px solid #FFFFFF; line-height: 33px;}
+.contact .footer .social-media{padding: 10px;}
+.contact .footer .social-media a{margin-left: 10px;}
+.contact .footer span{margin: 0 8px;}
+.contact .address {position: absolute; top: 340px; left: 58px; z-index: 10; color: #FFFFFF; letter-spacing: 2px; font-family: 'Avenir-Book';}
+.contact .address h4{margin: 0 0 20px; font-size: 15px;}
+.contact .address p{margin: 0 0 30px;}
+.contact .address p span{display: block; font-size: 13px;}
+.contact .address a{color: #FFFFFF;}
+
+.contact .content h1{font-size: 80px; font-weight: bold; color: #FFFFFF; margin: 0 0 80px; text-align: right; font-family: 'AvenirLTPro-HeavyOblique'; font-weight: bolder; line-height: 100px; /*margin-top: 92px;*/}
+.contact .content h1 span{display: inline-block; border-bottom: 4px solid #FFFFFF;}
+.contact .content h3{font-size:16px; margin: 0; text-align: right; letter-spacing: 5px; }
+.contact .content h4{text-align: right; font-weight: normal; font-style: italic;}
+.contact .content h4 a{color: #FFFFFF; text-align: right}
+.contact .content form{text-align: right; width: 500px; float: right; display: none;}
+.contact .content .input{border: none; border-bottom: 1px solid #FFFFFF; color: #FFFFFF; background: #000000; font-family: 'AvenirNext-Bold'; letter-spacing: 2px; font-weight: normal; width: 100%; padding: 10px 0; margin-bottom: 20px;}
+.contact .content .input.message{width: 414px;}
+.contact .content .submit{border: none; border-bottom: 1px solid #FFFFFF; border-left: 1px solid #FFFFFF; color: #FFFFFF; background: #000000; font-family: 'Avenir-Book'; letter-spacing: 2px; font-weight: normal; text-transform: uppercase; padding: 10px 20px 9px; height: 41px;}
+
+.left_menu_main.mobile{display: none;}
+
+.mobile{display: none !important;}
+.desktop{display: block !important;}
+
+@media only screen and (min-width:1600px) and (max-width:1799px) {
+.about .content h3::after{right: -591px;}
+}
+
+@media only screen and (min-width:1400px) and (max-width:1599px) {
+.about .content h3::after{right: -421px;}
+.down-arrow{bottom: 50px; left: 48px;}
+.up-arrow{bottom: 100px;}
+}
+
+@media only screen and (min-width:1200px) and (max-width:1399px) {
+.about .content h3::after{right: -274px; width: 83px;}
+.down-arrow{bottom: 50px; left: 48px;}
+.up-arrow{bottom: 100px;}
+.about .content p{font-size: 14px; line-height: 18px;}
+.about .content ul li{font-size: 14px; line-height: 18px;}
+}
+
+@media only screen and (min-width:960px) and (max-width:1199px) {
+.about .content h3::after{right: -94px; width: 60px;}
+.down-arrow{bottom: 50px; left: 48px;}
+.up-arrow{bottom: 100px;}
+/*.home .footer{width: 90%;}
+.work .footer{width: 90%;}
+.about .content h3::after{right: -94px;}
+.about .footer{width: 90%;}
+.contact .footer{width: 90%;}	
+.down-arrow{bottom: 50px; left: 48px;}
+.up-arrow{bottom: 100px;}
+.about .content{margin-top: 0;}
+.about .content h1{font-size: 42px; line-height: 36px; margin: 0 0 20px;}
+.contact .content h1 {font-size: 60px; line-height: 70px;}*/	
+}
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+.about .content h3::after{right: -94px; width: 60px;}
+.down-arrow{bottom: 50px; left: 48px;}
+.up-arrow{bottom: 100px;}
+.home .footer, .work .footer, .about .footer, .contact .footer{width: 88%;}
+.intro.content{width: 60%;}
+.contact .content h1 {font-size: 42px; line-height: 60px;}
+.about .content{width: 94%; margin-left: 6%;}
+.about .content h1 {font-size: 40px;}
+/*.right.mobile .icon-bar {background-color: #FFFFFF; display: block; width: 22px;  height: 3px; border-radius: 1px;  margin-top: 4px; }
+.right.mobile.black .icon-bar{background-color: #333333;}
+.right.mobile {position: absolute; right: 20px; top: 26px; z-index: 1;}
+.left_menu_main.mobile{display: block;}
+
+.slide-mobile{background: url(../imgs/mobile-bg.jpg) no-repeat center center; background-size: cover; position: absolute; height: 100%; width: 100%;}
+.home .navi{display: none}
+.home .navi.mobile{position: absolute; left: 55px; top: 160px; z-index: 10; text-align: left; font-family: 'Avenir-Book'; letter-spacing: 3px; color: #FFFFFF; line-height: 20px; font-size: 20px;} 
+.home .navi.mobile span{display: block;}
+.home .navi.mobile:after{background: none; width: 38px; height: 2px; content: ''; position: absolute; bottom: -20px; left: 0;}
+.home .logo{bottom: 20px; right: 20px; top: auto; left: auto; width: 90px;}
+.home .logo img{width: 100%;}
+.home .navi{top: 180px;}
+.home .kmti-logo{top: 30px; left: 20px; width: 10px;}
+.home .kmti-logo img{width: 100%;}
+.home .down-arrow{left: 20px; bottom: 24px; width: 24px}
+.home .down-arrow img{width: 100%;}
+.home .footer{display: none;}
+
+.work .navi{display: none}
+.work .logo{bottom: 20px; right: 20px; top: auto; left: auto; width: 90px;}
+.work .logo img{width: 100%;}
+.work .navi{top: 180px;}
+.work .kmti-logo{top: 30px; left: 20px; width: 10px;}
+.work .kmti-logo img{width: 100%;}
+.work .footer{display: none;}
+.work .up-arrow{display: none;}
+.work .down-arrow{left: 20px; bottom: 24px; width: 24px}
+.work .down-arrow img{width: 100%;}
+.work .content h4{font-family: 'Avenir-Book'; font-size: 13px; margin: 0 0 10px;}
+.work .content ul{margin: 0; padding: 0; list-style: none; position: relative}
+.work .content ul:after{background: #000000; width: 58px; height: 1px; content: ''; position: absolute; bottom: 130px; right: 0;}
+.work .content ul li{line-height: 12px; font-family: 'Avenir-Book'; font-size: 11px;}
+.work .tableCell{display: table-cell;}
+.work .intro{width: 70%;}
+
+.about .navi{display: none}
+.about .logo{bottom: 20px; right: 20px; top: auto; left: auto; width: 90px;}
+.about .logo img{width: 100%;}
+.about .navi{top: 180px;}
+.about .kmti-logo{top: 30px; left: 20px; width: 10px;}
+.about .kmti-logo img{width: 100%;}
+.about .footer{display: none;}
+.about .up-arrow{display: none;}
+.about .down-arrow{left: 20px; bottom: 24px; width: 24px}
+.about .down-arrow img{width: 100%;}
+.about .tableCell{display: table-cell;}
+.about .content{width: 100%; font-size: 11px; line-height: 12px; margin-top: 0;}
+.about .content p{margin: 0 0 10px;}
+.about .content mark{background: #fff25e; line-height: 17px}
+.about .content.desktop{display: none;}
+.about .content h4{font-size: 13px;}
+.about .content ul li{width: 100%;}
+
+.contact .navi{display: none}
+.contact .logo{bottom: 20px; right: 20px; top: auto; left: auto; width: 90px;}
+.contact .logo img{width: 100%;}
+.contact .navi{top: 180px;}
+.contact .kmti-logo{top: 30px; left: 20px; width: 10px;}
+.contact .kmti-logo img{width: 100%;}
+.contact .footer{display: none;}
+.contact .down-arrow, .work .up-arrow{display: none;}
+.contact .tableCell{display: table-cell;}
+.contact .intro{width: 80%; margin-bottom: 120px;}
+.contact .content h1{margin: 0; font-size: 52px; line-height: 60px; text-align: left;}
+.contact .content h1 span{border-bottom: 2px solid #FFFFFF;}
+.contact .content form{width: 100%; display: none;}
+.contact .address{bottom: 23px; left: 20px; line-height: 14px; top: auto; letter-spacing: 0;}
+.contact .address h4{margin: 0 0 10px; font-size: 13px;}
+.contact .address p{margin: 0 0 20px; line-height: 12px;}
+.contact h4.mobile{text-align: right; margin: 38px 0 0; font-size: 13px; letter-spacing: 2px;}
+.contact h4.mobile a{color: #FFFFFF;}
+
+.mobile{display: block !important;}
+.desktop{display: none !important;}*/
+}
+
+@media only screen and (min-width: 640px) and (max-width: 767px) {
+.right.mobile .icon-bar {background-color: #FFFFFF; display: block; width: 22px;  height: 3px; border-radius: 1px;  margin-top: 4px; }
+.right.mobile.black .icon-bar{background-color: #333333;}
+.right.mobile {position: absolute; right: 20px; top: 26px; z-index: 1;}
+.left_menu_main.mobile{display: block;}
+
+.slide-mobile{background: url(../imgs/mobile-bg.jpg) no-repeat center center; background-size: cover; position: absolute; height: 100%; width: 100%;}
+.home .navi{display: none}
+.home .navi.mobile{position: absolute; left: 55px; top: 160px; z-index: 10; text-align: left; font-family: 'Avenir-Book'; letter-spacing: 3px; color: #FFFFFF; line-height: 20px; font-size: 20px;} 
+.home .navi.mobile span{display: block;}
+.home .navi.mobile:after{background: none; width: 38px; height: 2px; content: ''; position: absolute; bottom: -20px; left: 0;}
+.home .logo{bottom: 20px; right: 20px; top: auto; left: auto; width: 90px;}
+.home .logo img{width: 100%;}
+.home .navi{top: 180px;}
+.home .kmti-logo{top: 30px; left: 20px; width: 10px;}
+.home .kmti-logo img{width: 100%;}
+.home .down-arrow{left: 20px; bottom: 24px; width: 24px}
+.home .down-arrow img{width: 100%;}
+.home .footer{display: none;}
+
+.work .navi{display: none}
+.work .logo{bottom: 20px; right: 20px; top: auto; left: auto; width: 90px;}
+.work .logo img{width: 100%;}
+.work .navi{top: 180px;}
+.work .kmti-logo{top: 30px; left: 20px; width: 10px;}
+.work .kmti-logo img{width: 100%;}
+.work .footer{display: none;}
+.work .up-arrow{display: none;}
+.work .down-arrow{left: 20px; bottom: 24px; width: 24px}
+.work .down-arrow img{width: 100%;}
+.work .content h4{font-family: 'Avenir-Book'; font-size: 13px; margin: 0 0 10px;}
+.work .content ul{margin: 0; padding: 0; list-style: none; position: relative}
+.work .content ul:after{background: #000000; width: 58px; height: 1px; content: ''; position: absolute; bottom: 130px; right: 0;}
+.work .content ul li{line-height: 12px; font-family: 'Avenir-Book'; font-size: 11px;}
+.work .tableCell{display: table-cell;}
+.work .intro{width: 70%;}
+
+.about .navi{display: none}
+.about .logo{bottom: 20px; right: 20px; top: auto; left: auto; width: 90px;}
+.about .logo img{width: 100%;}
+.about .navi{top: 180px;}
+.about .kmti-logo{top: 30px; left: 20px; width: 10px;}
+.about .kmti-logo img{width: 100%;}
+.about .footer{display: none;}
+.about .up-arrow{display: none;}
+.about .down-arrow{left: 20px; bottom: 24px; width: 24px}
+.about .down-arrow img{width: 100%;}
+.about .tableCell{display: table-cell;}
+.about .content{width: 100%; font-size: 11px; line-height: 12px; margin-top: 0;}
+.about .content p{margin: 0 0 10px;}
+.about .content mark{background: #fff25e; line-height: 17px}
+.about .content.desktop{display: none;}
+.about .content h4{font-size: 13px;}
+.about .content ul li{width: 100%;}
+
+.contact .navi{display: none}
+.contact .logo{bottom: 20px; right: 20px; top: auto; left: auto; width: 90px;}
+.contact .logo img{width: 100%;}
+.contact .navi{top: 180px;}
+.contact .kmti-logo{top: 30px; left: 20px; width: 10px;}
+.contact .kmti-logo img{width: 100%;}
+.contact .footer{display: none;}
+.contact .down-arrow, .work .up-arrow{display: none;}
+.contact .tableCell{display: table-cell;}
+.contact .intro{width: 80%; margin-bottom: 120px;}
+.contact .content h1{margin: 0; font-size: 32px; line-height: 40px; text-align: left;}
+.contact .content h1 span{border-bottom: 2px solid #FFFFFF;}
+.contact .content form{width: 100%; display: none;}
+.contact .address{bottom: 23px; left: 20px; line-height: 14px; top: auto; letter-spacing: 0;}
+.contact .address h4{margin: 0 0 10px; font-size: 13px;}
+.contact .address p{margin: 0 0 20px; line-height: 12px;}
+.contact h4.mobile{text-align: right; margin: 38px 0 0; font-size: 13px; letter-spacing: 2px;}
+.contact h4.mobile a{color: #FFFFFF;}
+
+#section1{background-color: rgb(204, 204, 204) !important;}
+#section2{background-color: rgb(255, 255, 255) !important;}
+
+.mobile{display: block !important;}
+.desktop{display: none !important;}
+}
+
+@media only screen and (min-width: 480px) and (max-width: 639px) {
+.right.mobile .icon-bar {background-color: #FFFFFF; display: block; width: 22px;  height: 3px; border-radius: 1px;  margin-top: 4px; }
+.right.mobile.black .icon-bar{background-color: #333333;}
+.right.mobile {position: absolute; right: 20px; top: 26px; z-index: 1;}
+.left_menu_main.mobile{display: block;}
+
+.slide-mobile{background: url(../imgs/mobile-bg.jpg) no-repeat center center; background-size: cover; position: absolute; height: 100%; width: 100%;}
+.home .navi{display: none}
+.home .navi.mobile{position: absolute; left: 55px; top: 160px; z-index: 10; text-align: left; font-family: 'Avenir-Book'; letter-spacing: 3px; color: #FFFFFF; line-height: 20px; font-size: 20px;} 
+.home .navi.mobile span{display: block;}
+.home .navi.mobile:after{background: none; width: 38px; height: 2px; content: ''; position: absolute; bottom: -20px; left: 0;}
+.home .logo{bottom: 20px; right: 20px; top: auto; left: auto; width: 90px;}
+.home .logo img{width: 100%;}
+.home .navi{top: 180px;}
+.home .kmti-logo{top: 30px; left: 20px; width: 10px;}
+.home .kmti-logo img{width: 100%;}
+.home .down-arrow{left: 20px; bottom: 24px; width: 24px}
+.home .down-arrow img{width: 100%;}
+.home .footer{display: none;}
+
+.work .navi{display: none}
+.work .logo{bottom: 20px; right: 20px; top: auto; left: auto; width: 90px;}
+.work .logo img{width: 100%;}
+.work .navi{top: 180px;}
+.work .kmti-logo{top: 30px; left: 20px; width: 8px;}
+.work .kmti-logo img{width: 100%;}
+.work .footer{display: none;}
+.work .up-arrow{display: none;}
+.work .down-arrow{left: 20px; bottom: 24px; width: 24px}
+.work .down-arrow img{width: 100%;}
+.work .content h4{font-family: 'Avenir-Book'; font-size: 13px; margin: 0 0 10px;}
+.work .content ul{margin: 0; padding: 0; list-style: none; position: relative}
+.work .content ul:after{background: #000000; width: 58px; height: 1px; content: ''; position: absolute; bottom: 130px; right: 0;}
+.work .content ul li{line-height: 12px; font-family: 'Avenir-Book'; font-size: 11px;}
+.work .tableCell{display: table-cell;}
+.work .intro{width: 70%;}
+
+.about .navi{display: none}
+.about .logo{bottom: 20px; right: 20px; top: auto; left: auto; width: 90px;}
+.about .logo img{width: 100%;}
+.about .navi{top: 180px;}
+.about .kmti-logo{top: 30px; left: 20px; width: 10px;}
+.about .kmti-logo img{width: 100%;}
+.about .footer{display: none;}
+.about .up-arrow{display: none;}
+.about .down-arrow{left: 20px; bottom: 24px; width: 24px}
+.about .down-arrow img{width: 100%;}
+.about .tableCell{display: table-cell;}
+.about .content{width: 100%; font-size: 11px; line-height: 12px; margin-top: 0;}
+.about .content p{margin: 0 0 10px;}
+.about .content mark{background: #fff25e; line-height: 17px}
+.about .content.desktop{display: none;}
+.about .content h4{font-size: 13px;}
+.about .content ul li{width: 100%;}
+
+.contact .navi{display: none}
+.contact .logo{bottom: 20px; right: 20px; top: auto; left: auto; width: 90px;}
+.contact .logo img{width: 100%;}
+.contact .navi{top: 180px;}
+.contact .kmti-logo{top: 30px; left: 20px; width: 10px;}
+.contact .kmti-logo img{width: 100%;}
+.contact .footer{display: none;}
+.contact .down-arrow, .work .up-arrow{display: none;}
+.contact .tableCell{display: table-cell;}
+.contact .intro{width: 80%; margin-bottom: 120px;}
+.contact .content h1{margin: 0; font-size: 22px; line-height: 32px; text-align: left;}
+.contact .content h1 span{border-bottom: 2px solid #FFFFFF;}
+.contact .content form{width: 100%; display: none;}
+.contact .address{bottom: 23px; left: 20px; line-height: 14px; top: auto; letter-spacing: 0;}
+.contact .address h4{margin: 0 0 10px; font-size: 13px;}
+.contact .address p{margin: 0 0 20px; line-height: 12px;}
+.contact h4.mobile{text-align: right; margin: 38px 0 0; font-size: 13px; letter-spacing: 2px;}
+.contact h4.mobile a{color: #FFFFFF;}
+
+#section1{background-color: rgb(204, 204, 204) !important;}
+#section2{background-color: rgb(255, 255, 255) !important;}
+
+.mobile{display: block !important;}
+.desktop{display: none !important;}
+}
+
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+.right.mobile .icon-bar {background-color: #FFFFFF; display: block; width: 22px;  height: 3px; border-radius: 1px;  margin-top: 4px; }
+.right.mobile.black .icon-bar{background-color: #333333;}
+.right.mobile {position: absolute; right: 20px; top: 26px; z-index: 1;}
+.left_menu_main.mobile{display: block;}
+
+.slide-mobile{background: url(../imgs/mobile-bg.jpg) no-repeat center center; background-size: cover; position: absolute; height: 100%; width: 100%;}
+.home .navi{display: none}
+.home .navi.mobile{position: absolute; left: 55px; top: 160px; z-index: 10; text-align: left; font-family: 'Avenir-Book'; letter-spacing: 3px; color: #FFFFFF; line-height: 20px; font-size: 20px;} 
+.home .navi.mobile span{display: block;}
+.home .navi.mobile:after{background: none; width: 38px; height: 2px; content: ''; position: absolute; bottom: -20px; left: 0;}
+.home .logo{bottom: 20px; right: 20px; top: auto; left: auto; width: 90px;}
+.home .logo img{width: 100%;}
+.home .navi{top: 180px;}
+.home .kmti-logo{top: 30px; left: 20px; width: 10px;}
+.home .kmti-logo img{width: 100%;}
+.home .down-arrow{left: 20px; bottom: 24px; width: 24px}
+.home .down-arrow img{width: 100%;}
+.home .footer{display: none;}
+
+.work .navi{display: none}
+.work .logo{bottom: 20px; right: 20px; top: auto; left: auto; width: 90px;}
+.work .logo img{width: 100%;}
+.work .navi{top: 180px;}
+.work .kmti-logo{top: 30px; left: 20px; width: 10px;}
+.work .kmti-logo img{width: 100%;}
+.work .footer{display: none;}
+.work .up-arrow{display: none;}
+.work .down-arrow{left: 20px; bottom: 24px; width: 24px}
+.work .down-arrow img{width: 100%;}
+.work .content h4{font-family: 'Avenir-Book'; font-size: 13px; margin: 0 0 10px;}
+.work .content ul{margin: 0; padding: 0; list-style: none; position: relative}
+.work .content ul:after{background: #000000; width: 58px; height: 1px; content: ''; position: absolute; bottom: 130px; right: 0;}
+.work .content ul li{line-height: 12px; font-family: 'Avenir-Book'; font-size: 11px;}
+.work .tableCell{display: table-cell;}
+.work .intro{width: 70%;}
+
+.about .navi{display: none}
+.about .logo{bottom: 20px; right: 20px; top: auto; left: auto; width: 90px;}
+.about .logo img{width: 100%;}
+.about .navi{top: 180px;}
+.about .kmti-logo{top: 30px; left: 20px; width: 10px;}
+.about .kmti-logo img{width: 100%;}
+.about .footer{display: none;}
+.about .up-arrow{display: none;}
+.about .down-arrow{left: 20px; bottom: 24px; width: 24px}
+.about .down-arrow img{width: 100%;}
+.about .tableCell{display: table-cell;}
+.about .content{width: 100%; font-size: 11px; line-height: 12px; margin-top: 0;}
+.about .content p{margin: 0 0 10px;}
+.about .content mark{background: #fff25e; line-height: 17px}
+.about .content.desktop{display: none;}
+.about .content h4{font-size: 13px;}
+.about .content ul li{width: 100%;}
+
+.contact .navi{display: none}
+.contact .logo{bottom: 20px; right: 20px; top: auto; left: auto; width: 90px;}
+.contact .logo img{width: 100%;}
+.contact .navi{top: 180px;}
+.contact .kmti-logo{top: 30px; left: 20px; width: 10px;}
+.contact .kmti-logo img{width: 100%;}
+.contact .footer{display: none;}
+.contact .down-arrow, .work .up-arrow{display: none;}
+.contact .tableCell{display: table-cell;}
+.contact .intro{width: 80%; margin-bottom: 120px;}
+.contact .content h1{margin: 0 0 0 15px; font-size: 39px; line-height: 34px; text-align: left;}
+.contact .content h1 span{border-bottom: 2px solid #FFFFFF; margin-bottom: 5px;}
+.contact .content form{width: 100%; display: none;}
+.contact .address{bottom: 23px; left: 20px; line-height: 14px; top: auto; letter-spacing: 0;}
+.contact .address h4{margin: 0 0 10px; font-size: 13px;}
+.contact .address p{margin: 0 0 20px; line-height: 12px;}
+.contact h4.mobile{text-align: right; margin: 38px 0 0; font-size: 13px; letter-spacing: 2px;}
+.contact h4.mobile a{color: #FFFFFF;}
+
+#section1{background-color: rgb(204, 204, 204) !important;}
+#section2{background-color: rgb(255, 255, 255) !important;}
+
+.mobile{display: block !important;}
+.desktop{display: none !important;}
+}

@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />	
+	<title>KMTI</title>
+	
+	<meta name="author" content="Alvaro Trigo Lopez" />
+	<meta name="description" content="fullPage full-screen navigation and sections control menu." />
+	<meta name="keywords"  content="fullpage,jquery,demo,screen,fullscreen,navigation,control arrows, dots" />
+	<meta name="Resource-type" content="Document" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
+	<link rel="stylesheet" type="text/css" href="css/main.css" />
+	<link rel="stylesheet" type="text/css" href="css/general.css" />
+	
+	<link rel="icon" href="imgs/favicon.png">
+
+	<!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+	<![endif]-->
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>	
+	<script type="text/javascript" src="vendors/jquery.slimscroll.min.js"></script>
+	<script type="text/javascript" src="jquery.fullPage.js"></script>
+	
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet"> 
+
+	<script type="text/javascript">    
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+				anchors: ['firstPage', 'secondPage', '3rdPage', '4thPage'],
+				slidesColor: ['#C63D0F', '#ebebeb', '#cccccc', '#000000'],
+				navigation: true,
+				navigationPosition: 'left',
+				navigationTooltips: ['First', 'Second', 'Third', 'Fourth'],
+				onLeave: function(index, nextIndex, direction){
+					$('.mobile .mymenu a').trigger('click');
+					if(nextIndex == 1 || nextIndex == 4){
+						window.setTimeout(function(){
+						  $('#RTMB').removeClass('black');
+						}, 1400);
+						
+					}else if(nextIndex == 2 || nextIndex == 3){
+						window.setTimeout(function(){
+						  $('#RTMB').addClass('black');
+						}, 1400);
+						
+					}
+					console.log(nextIndex);
+				},
+				onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex){
+					
+				}
+			});
+			
+		}); 
+	</script>
+
+</head>
+<body>
+<div id="RTMB" class="right mobile">
+	<a id="menu-toggle" href="#" class="btn btn-transparent btn-lg toggle">
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+	</a>
+</div>
+<div class="left_menu_main mobile" id="sidebar-wrapper">
+	<div class="mymenu">
+		<a id="click_here"></a>
+		<div id="drop_menu" class="menu4"> 
+			<ul id="panel">
+				<li><a id="FMN" href="#firstPage"><strong>HOME</strong></a></li>
+				<li><a id="SMN" href="#secondPage">WORK</a></li>
+				<li><a id="TMN" href="#3rdPage">ABOUT</a></li>
+				<li><a id="FOMN" href="#4thPage">CONTACT</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<div id="fullpage">
+	<!-- Home -->
+	<div class="section home" id="section0">
+		<div class="logo"><img src="imgs/logo.png" srcset="imgs/logo@2x.png 2x"></div>
+		<div class="navi">
+			<ul>
+				<li><a href="#firstPage"><strong>HOME</strong></a></li>
+				<li><a href="#secondPage">WORK</a></li>
+				<li><a href="#3rdPage">ABOUT</a></li>
+				<li><a href="#4thPage">CONTACT</a></li>
+			</ul>
+		</div>
+		<div class="navi mobile">
+			<span>CONS</span>
+			<span>TRUC</span>
+			<span>TION +</span>
+			<span>MGMT</span>
+		</div>
+		<div class="kmti-logo"><img src="imgs/kmti-logo.png" srcset="imgs/kmti-logo@2x.png 2x"></div>
+		
+		<div class="down-arrow"><a href="#secondPage"><img src="imgs/down-arrow.png"></a></div>
+		
+		<div class="slide-mobile"></div>
+	    <div class="slide" id="slide1"></div>
+	    <div class="slide" id="slide2"></div>
+		<div class="slide" id="slide3"></div>
+		<div class="slide" id="slide4"></div>
+		<div class="slide" id="slide5"></div>
+		<div class="slide" id="slide6"></div>
+		<div class="slide" id="slide7"></div>
+		<div class="slide" id="slide8"></div>
+
+		<div class="footer">
+			<div class="copy">
+				<span class="year">© </span><span>LEGAL</span>
+			</div>
+		</div>
+	</div>
+	
+	<!-- Work -->
+	<div class="section work" id="section1">
+		<div class="logo"><a href="#firstPage"><img src="imgs/logo-sm.png" srcset="imgs/logo-sm@2x.png 2x"></a></div>
+		<div class="navi">
+			<ul>
+				<li><a href="#firstPage">HOME</a></li>
+				<li><a href="#secondPage"><strong>WORK</strong></a></li>
+				<li><a href="#3rdPage">ABOUT</a></li>
+				<li><a href="#4thPage">CONTACT</a></li>
+			</ul>
+		</div>
+		<div class="kmti-logo"><a href="#firstPage"><img src="imgs/kmti-logo2.png" srcset="imgs/kmti-logo2@2x.png 2x"></a></div>
+		
+		<div class="up-arrow"><a href="#firstPage"><img src="imgs/up-arrow.png"></a></div>
+		<div class="down-arrow"><a href="#3rdPage"><img src="imgs/down-arrow2.png"></a></div>
+		
+		<div class="intro content">
+			<img src="imgs/work-logo.png" class="desktop">
+			<div class="mobile">
+				<h4>Work Experience</h4>
+				<ul>
+					<li>TIiffany & Co. </li>
+					<li>Giorgio Armani</li>
+					<li>Emporio Armani</li>
+					<li>Ermenegildo Zegna</li> 
+					<li>BVLGARI</li>
+					<li>Tory Burch </li>
+					<li>L’OCCITANE </li>
+					<li>Hugo Boss </li>
+					<li>Victoria's Secret </li>
+					<li>PINK</li>
+					<li>Dolce & Gabbana </li>
+					<li>Gucci </li>
+					<li>Escada </li>
+					<li>Ventana Inn </li>
+					<li>CH Carolina </li>
+					<li>Herrera </li>
+					<li>NCOUNTER </li>
+					<li>Cava Mezze Grill </li>
+					<li>Fabletics </li>
+					<li>Eldorado Resort</li> 
+					<li>Concrete Cowboy </li>
+					<li>Cotton On Group HQ</li>
+				</ul>
+			</div>
+		</div>
+		
+		<div class="footer">
+			<div class="copy">
+				<span class="year">© </span><span>LEGAL</span> <span><a href="#firstPage">BACK TO TOP</a></span>
+			</div>
+		</div>
+	</div>
+	
+	<!-- About -->
+	<div class="section about" id="section2">
+		<div class="logo"><a href="#firstPage"><img src="imgs/logo-sm.png" srcset="imgs/logo-sm@2x.png 2x"></a></div>
+		<div class="navi">
+			<ul>
+				<li><a href="#firstPage">HOME</a></li>
+				<li><a href="#secondPage">WORK</a></li>
+				<li><a href="#3rdPage"><strong>ABOUT</strong></a></li>
+				<li><a href="#4thPage">CONTACT</a></li>
+			</ul>
+		</div>
+		<div class="kmti-logo"><a href="#firstPage"><img src="imgs/kmti-logo2.png" srcset="imgs/kmti-logo2@2x.png 2x"></a></div>
+		
+		<div class="up-arrow"><a href="#secondPage"><img src="imgs/up-arrow.png"></a></div>
+		<div class="down-arrow"><a href="#4thPage"><img src="imgs/down-arrow2.png"></a></div>
+		
+		<div class="intro">
+			<div class="content desktop">
+				<h1>
+					<span>The details are</span><br> 
+					<span>not the de-</span><br> 
+					<span>tails. They make</span><br>
+					<span>the design.</span>
+				</h1>
+				<h3>Charles Eames</h3>
+				
+				<p>KMTI is a construction + management studio providing nearly two decades of in field, office and executive level construction management experience.   We cater to the retail, high end retail, ‘A’ grade office interiors, bar restaurant concept + design sectors</p>
+				
+				<h4>Services provided:</h4>
+				<ul>
+					<li>Design Build</li>
+					<li>Scheduling</li>
+					<li>Construction Management</li>
+					<li>Project Management</li>
+					<li>Account Management</li>
+					<li>Pre-Construction Services </li>
+					<li>Estimating</li>
+					<li>Consultant Services</li>
+					<li>Value Engineering</li>
+					<li>Procurement</li>
+					<li>Coordination</li>
+					<li>Manufacturing</li>
+				</ul>
+			</div>
+			
+			<div class="content mobile">
+				<p><mark>KMTI is a construction + management studio providing nearly two decades of in field, office and executive level construction management experience.   We cater to the retail, high end retail, ‘A’ grade office interiors, bar restaurant concept + design sectors</mark></p>
+				
+				<h4>Services provided:</h4>
+				<ul>
+					<li>Design Build</li>
+					<li>Scheduling</li>
+					<li>Construction Management</li>
+					<li>Project Management</li>
+					<li>Account Management</li>
+					<li>Pre-Construction Services </li>
+					<li>Estimating</li>
+					<li>Consultant Services</li>
+					<li>Value Engineering</li>
+					<li>Procurement</li>
+					<li>Coordination</li>
+					<li>Manufacturing</li>
+				</ul>
+			</div>
+		</div>
+		
+		<div class="footer">
+			<div class="social-media">
+				<a href="https://www.instagram.com/_michaelizdepski" target="_blank"><img src="imgs/instagram-logo.png"></a> <a href="https://www.linkedin.com/in/michael-izdepski-4906245a" target="_blank"><img src="imgs/in-logo.png"></a>
+			</div>
+			<div class="copy">
+				<span class="year">© </span><span>LEGAL</span> <span><a href="#firstPage">BACK TO TOP</a></span>
+			</div>
+		</div>
+	</div>
+	
+	<!-- Contact -->
+	<div class="section contact" id="section3">
+		<div class="logo"><a href="#firstPage"><img src="imgs/logo-sm2.png" srcset="imgs/logo-sm2@2x.png 2x"></a></div>
+		<div class="navi">
+			<ul>
+				<li><a href="#firstPage">HOME</a></li>
+				<li><a href="#secondPage">WORK</a></li>
+				<li><a href="#3rdPage">ABOUT</a></li>
+				<li><a href="#4thPage"><strong>CONTACT</strong></a></li>
+			</ul>
+		</div>
+		
+		<div class="address">
+			<h4>Address</h4>
+			<p>
+				<span>3104 e. camelback road</span>
+				<span>suite 1136</span>
+				<span>PHX, AZ 85016</span>
+			</p>
+			<h4>Phone</h4>
+			<p>
+				<span>+1 602 288 5338 office</span>
+				<span>+1 602 882 7258 mobile</span>
+			</p>
+		</div>
+		
+		<div class="kmti-logo"><a href="#firstPage"><img src="imgs/kmti-logo.png" srcset="imgs/kmti-logo@2x.png 2x"></a></div>
+		
+		<div class="intro content desktop">
+			<h1>
+				<span>General</span><br>
+				<span>questions?</span><br>
+				<span>Email us here.</span>
+			</h1>
+			<h4 class="desktop"><a href="mailto:info@kmtidb.com">info@kmtidb.com</a></h4>
+			<h4 class="mobile"><a href="mailto:info@kmtidb.com">info@kmtidb.com</a></h4>
+			<form>
+				<input type="text" name="name" id="name" class="input" placeholder="Your Name">
+				<input type="text" name="message" id="message" class="input message" placeholder="Your Message"><input type="submit" name="submit" id="submit" value="SEND" class="submit">
+			</form>
+		</div>
+		
+		<div class="intro content mobile">
+			<h1>
+				<span>General</span><br>
+				<span>questions?</span><br>
+				<span>Email us </span><br>
+				<span>here.</span>
+			</h1>
+			<h4 class="desktop"><a href="mailto:info@kmtidb.com">info@kmtidb.com</a></h4>
+			<h4 class="mobile"><a href="mailto:info@kmtidb.com">info@kmtidb.com</a></h4>
+			<form>
+				<input type="text" name="name" id="name" class="input" placeholder="Your Name">
+				<input type="text" name="message" id="message" class="input message" placeholder="Your Message"><input type="submit" name="submit" id="submit" value="SEND" class="submit">
+			</form>
+		</div>
+		
+		<div class="footer">
+			<div class="copy">
+				<span class="year">© </span><span>LEGAL</span>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<script> 
+$(document).ready(function(){
+	var year = new Date().getFullYear()
+	$('.year').append(year);
+	
+	
+	$("#click_here_sub").click(function () {
+	$("#drop_menu_sub").fadeIn(1000);
+	$("#drop_menu").slideUp("slow");
+		$("#click_here_back").fadeIn(10);
+		$("#click_here").fadeOut(10);
+	});
+	$("#click_here_back").click(function () {
+		$("#drop_menu_sub").slideUp(100);
+		$("#drop_menu").slideDown("slow");
+		$("#click_here_back").fadeOut(100);
+		$("#click_here").fadeIn(100);
+	});
+	$("#click_here").click(function () {
+		$(".left_menu_main").removeClass("active");
+			return false;
+	});
+	
+	$(".click_here").click(function () {
+		$(".left_menu_main").removeClass("active");
+			return false;
+	});
+
+	$("#menu-toggle").click(function () {
+		$(".left_menu_main").addClass("active");
+			return false;
+	});
+  
+  
+	$(".close").click(function () {
+		$(".overlay").removeClass("active");
+     $('.overlay').find("*").removeClass("active");
+			return false;
+	});
+
+	$(".button").click(function () {
+    var status_id = $(this).attr('href').split('#');
+     
+		$(".overlay").addClass("active");
+    $("#"+status_id[1]).addClass("active");
+    
+			return false;
+	});
+});
+
+</script>
+</body>
+</html>
