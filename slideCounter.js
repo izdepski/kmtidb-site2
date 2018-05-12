@@ -53,7 +53,7 @@ class SlideCounter {
 		        if (mutation.type == 'attributes') {
 							var targetSlide = mutation.target;
 							var classAttr = targetSlide.className;
-							if (classAttr.indexOf("slide active") !== -1) {
+							if (classAttr.indexOf("active") !== -1) {
 								var mutParent = targetSlide.parentNode;
 								var mutIdx = Array.prototype.indexOf.call(mutParent.children, targetSlide);
 								
