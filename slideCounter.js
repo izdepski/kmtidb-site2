@@ -35,7 +35,7 @@ class SlideCounter {
 		this.slideCounter.appendChild(slideLen);
 		this.homeSection.appendChild(this.slideCounter);
 		
-		this.observeSlides(homeSection);
+		this.observeSlides(this.homeSection);
   }
 	
 	observeSlides(t) {
