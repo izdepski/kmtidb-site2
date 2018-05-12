@@ -132,7 +132,7 @@ a:hover{text-decoration: none;}
 .about .content ul li{float: left; width: 50%; font-family: 'Avenir-Book';}
 
 /* Contact */
-.contact tableCell{opacity: 0.2;}
+.contact .tableCell{opacity: 0.2;}
 .contact{color: #000000; letter-spacing: 5px;}
 .contact .logo{position: absolute; top: 33px; left: 58px; z-index: 10}
 .contact .kmti-logo{position: absolute; top: 70px; right: 55px; z-index: 10}
