@@ -1,7 +1,6 @@
 class SlideCounter {
 	constructor() {
 		this.homeSection = document.querySelector('#section0');
-		this.slidesContainer = document.querySelector('.slidesContainer');
 		this.slides = document.querySelectorAll('.slide');
 		
 		this.render();
@@ -36,7 +35,7 @@ class SlideCounter {
 		this.slideCounter.appendChild(slideLen);
 		this.homeSection.appendChild(this.slideCounter);
 		
-		this.observeSlides(this.slidesContainer);
+		this.observeSlides(homeSection);
   }
 	
 	observeSlides(t) {
@@ -54,7 +53,7 @@ class SlideCounter {
 		        if (mutation.type == 'attributes') {
 							var targetSlide = mutation.target;
 							var classAttr = targetSlide.className;
-							if (classAttr.indexOf("active") !== -1) {
+							if (classAttr.indexOf("slide active") !== -1) {
 								var mutParent = targetSlide.parentNode;
 								var mutIdx = Array.prototype.indexOf.call(mutParent.children, targetSlide);
 								
