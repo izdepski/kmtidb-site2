@@ -2,7 +2,7 @@ class SlideCounter {
 	constructor() {
 		this.homeSection = document.querySelector('#section0');
 		this.slidesContainer = document.querySelector('.slidesContainer');
-		this.slides = this.slidesContainer.querySelectorAll('.slide');
+		this.slides = document.querySelectorAll('.slide');
 		
 		this.render();
 	}
@@ -34,7 +34,7 @@ class SlideCounter {
 		this.slideCounter.appendChild(this.slideIdx);
 		this.slideCounter.appendChild(slideSep);
 		this.slideCounter.appendChild(slideLen);
-    this.homeSection.appendChild(this.slideCounter);
+		this.homeSection.appendChild(this.slideCounter);
 		
 		this.observeSlides(this.slidesContainer);
   }
