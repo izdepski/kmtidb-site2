@@ -2,6 +2,7 @@ class SlideCounter {
 	constructor() {
 		this.homeSection = document.querySelector('#section0');
 		this.slides = document.querySelectorAll('.slide');
+		this.isTablet = navigator.userAgent.match(/(iPhone|iPod|iPad|Android|BlackBerry|Windows Phone|Tizen|Bada)/);
 		
 		this.render();
 	}
@@ -11,31 +12,38 @@ class SlideCounter {
 	}
 	
   initCounter() {
-    this.slideCounter = document.createElement("div");
-		this.slideCounter.id = "slidecounter";
-		this.slideCounter.style.cssText = "\
+	this.slideCounter = document.createElement("div");
+	this.slideCounter.id = "slidecounter";
+	this.slideCounter.style.cssText = "\
 			position: absolute; \
 			bottom: 12%; \
 			right: 50px; \
 			font-size: 15px; \
 			color: #FFFFFF; \
 			font-weight: bold";
+	
+
+	this.slideIdx = document.createElement("span");
+	this.slideIdx.id = "slideidx";
+	this.slideIdx.innerText = "1";
+	const slideSep = document.createElement("span");
+	slideSep.innerText = " / ";
+	const slideLen = document.createElement("span");
+	slideLen.id = "slidelen";
+	slideLen.innerText = this.slides.length;
 		
-		this.slideIdx = document.createElement("span");
-		this.slideIdx.id = "slideidx";
-		this.slideIdx.innerText = "1";
-		const slideSep = document.createElement("span");
-		slideSep.innerText = " / ";
-		const slideLen = document.createElement("span");
-		slideLen.id = "slidelen";
-		slideLen.innerText = this.slides.length;
+	this.slideCounter.appendChild(this.slideIdx);
+	this.slideCounter.appendChild(slideSep);
+	this.slideCounter.appendChild(slideLen);
+	this.homeSection.appendChild(this.slideCounter);
 		
-		this.slideCounter.appendChild(this.slideIdx);
-		this.slideCounter.appendChild(slideSep);
-		this.slideCounter.appendChild(slideLen);
-		this.homeSection.appendChild(this.slideCounter);
-		
-		this.observeSlides(this.homeSection);
+	this.observeSlides(this.homeSection);
+	
+	if (this.isTablet) {
+		this.slideCounter.style.cssText = "display: none;"
+	} else {
+		this.slideCounter.style.cssText = "display: block;"
+	}
   }
 	
 	observeSlides(t) {
