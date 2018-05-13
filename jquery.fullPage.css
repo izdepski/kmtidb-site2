@@ -79,14 +79,14 @@ html, body {
     width: 21px; height: 34px;
     /*border-width: 38.5px 34px 38.5px 0;
     border-color: transparent #fff transparent transparent;*/
-    background: url(imgs/pre.png) no-repeat; border: none
+    background: url(imgs/pre.svg) no-repeat; border: none
 }
 .controlArrow.next {
     right: 50px;
     width: 21px; height: 34px;
     /*border-width: 38.5px 0 38.5px 34px;
     border-color: transparent transparent transparent #fff;*/
-   background: url(imgs/next.png) no-repeat; border: none
+   background: url(imgs/next.svg) no-repeat; border: none
 }
 .scrollable {
     overflow: scroll;
