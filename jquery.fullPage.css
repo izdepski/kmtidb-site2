@@ -41,6 +41,15 @@ html, body {
     transition: all 0.3s ease-out;
 }
 .slides img{width: 100%;}
+.slidecounter{
+    display: block;
+    position: absolute;
+    bottom: 12%;
+    right: 50px;
+    font-size: 15px;
+    color: #FFFFFF;
+    font-weight: bold;
+}
 .section.table, .slide.table {
     display: table;
     width: 100%;
@@ -214,6 +223,7 @@ html, body {
 .controlArrow{display: none;}
 
 .slides{display: none;}
+.slidecounter{display: none;}
 
 .mobile{display: block;}
 .desktop{display: none;}
