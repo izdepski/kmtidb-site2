@@ -18,14 +18,16 @@ class SlideCounter {
 	this.slideIdx = document.createElement("span");
 	this.slideIdx.id = "slideidx";
 	this.slideIdx.innerText = "1";
-	const slideSep = document.createElement("span");
-	slideSep.innerText = " / ";
+	
+	const slideIdxSep = document.createElement("span");
+	slideIdxSep.innerText = " / ";
+	
 	const slideLen = document.createElement("span");
 	slideLen.id = "slidelen";
 	slideLen.innerText = this.slides.length;
 		
 	this.slideCounter.appendChild(this.slideIdx);
-	this.slideCounter.appendChild(slideSep);
+	this.slideCounter.appendChild(slideIdxSep);
 	this.slideCounter.appendChild(slideLen);
 	this.homeSection.appendChild(this.slideCounter);
 		
