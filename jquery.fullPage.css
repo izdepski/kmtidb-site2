@@ -34,11 +34,20 @@ html, body {
 .slides {
     height: 100%;
     overflow: hidden;
-    position: relative;
     -webkit-transition: all 0.3s ease-out;
     -moz-transition: all 0.3s ease-out;
     -o-transition: all 0.3s ease-out;
     transition: all 0.3s ease-out;
+}
+.slides:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(to right, rgba(0,0,0,0.75), transparent 45%, rgba(0,0,0,0.75) 100%);
+    opacity: 0.5;
 }
 .slides img{width: 100%;}
 .slidecounter{
@@ -63,16 +72,6 @@ html, body {
 .slidesContainer {
     float: left;
     position: relative;
-}
-.slidesContainer:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    background-color: #CCCCCC;
-    opacity: 0.3;
 }
 .controlArrow {
     position: absolute;
