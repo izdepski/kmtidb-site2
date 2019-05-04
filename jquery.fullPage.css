@@ -26,6 +26,7 @@ html, body {
 }
 .slide {
     float: left;
+		filter: grayscale(95%);
 }
 .slide, .slidesContainer {
     height: 100%;
